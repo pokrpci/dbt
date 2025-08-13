@@ -1,0 +1,132 @@
+version: 2
+   
+models:
+  - name: ConversationDet
+    description: "This model provides detailed information about conversations, including various metrics and attributes."
+    columns:
+      - name: cvd_ConversationID
+        description: "Unique identifier for the conversation."
+        data_tests:
+          #- unique
+          - not_null
+          - relationships:
+              to: ref('ConversationSum')
+              field: cvs_ConversationID  
+      - name: cvd_StartDateTime
+        description: "test" #"{{ get_desc('gc_CONVERSATIONS_SEGMENT_FACT', 'START_DATE_TIME_KEY') }}"
+      - name: cvd_EndDateTime
+        description: "test" #"{{ get_desc('gc_CONVERSATIONS_SEGMENT_FACT', 'END_DATE_TIME_KEY') }}"    
+      - name: cvd_SessionID
+        description: "test" #"{{ get_desc('gc_CONVERSATIONS_SEGMENT_FACT', 'SESSION_ID') }}"           
+     
+  - name: ConversationSum
+    description: "This model provides a summary of conversations, including details such as start and end times, duration, agents involved, and various metrics."
+    columns:
+      - name: cvs_ConversationID
+        description: "Unique identifier for the conversation."
+        data_tests:
+          - unique
+          - not_null
+          - relationships:
+              to:  ref('stg_gc_conversation_segment_fact')
+              field: conversation_id
+      - name: cvs_StartDateTime
+        description: "Start date and time of the conversation."
+      - name: cvs_EndDateTime
+        description: "End date and time of the conversation."
+      - name: cvs_StartInterval
+        description: "Start interval of the conversation."
+      - name: cvs_TotalSeconds
+        description: "Total duration of the conversation in seconds."
+      - name: cvs_OriginatingDirection
+        description: "Direction of the conversation (e.g., inbound, outbound)."
+      - name: cvs_AcctNbr
+        description: "Account number associated with the conversation."
+      - name: cvs_DistNbr
+        description: "Distribution number associated with the conversation."
+      - name: cvs_Agents
+        description: "Agents involved in the conversation."
+      - name: cvs_FinalWrapupCode
+        description: "Final wrap-up code for the conversation."
+      - name: cvs_RPC
+        description: "Right party contact indicator."
+      - name: cvs_CallMethod
+        description: "Call method (Dialer or Manual)."
+      - name: cvs_CampaignName
+        description: "Name of the campaign associated with the conversation."
+      - name: cvs_DialingMode
+        description: "Dialing mode used for the conversation."
+      - name: cvs_ContactListID
+        description: "Contact list ID associated with the conversation."
+      - name: cvs_CallbackRequested
+        description: "Indicator if a callback was requested."
+      - name: cvs_CountFlow
+        description: "Flow count for the conversation."
+      - name: cvs_CountOutbound
+        description: "Outbound count for the conversation."
+      - name: cvs_CountCampaignAttempted
+        description: "Campaign attempted count for the conversation."
+      - name: cvs_CountCampaignConnected
+        description: "Campaign connected count for the conversation."
+      - name: cvs_CountCampaignAbandoned
+        description: "Campaign abandoned count for the conversation."
+      - name: cvs_CountOffered
+        description: "Offered count for the conversation."
+      - name: cvs_CountAnswered
+        description: "Answered count for the conversation."
+      - name: cvs_CountConnected
+        description: "Connected count for the conversation."
+      - name: cvs_CountError
+        description: "Error count for the conversation."
+      - name: cvs_CountOverSLA
+        description: "Over SLA count for the conversation."
+      - name: cvs_CountConsult
+        description: "Consult count for the conversation."
+      - name: cvs_CountTransferred
+        description: "Transferred count for the conversation."
+      - name: cvs_CountTransferredConsult
+        description: "Transferred consult count for the conversation."
+      - name: cvs_CountTransferredBlind
+        description: "Transferred blind count for the conversation."
+      - name: cvs_SecondsIVR
+        description: "IVR time in seconds."
+      - name: cvs_SecondsAbandon
+        description: "Abandon time in seconds."
+      - name: cvs_SecondsACD
+        description: "ACD time in seconds."
+      - name: cvs_SecondsAlert
+        description: "Alert time in seconds."
+      - name: cvs_SecondsAgentResponse
+        description: "Agent response time in seconds."
+      - name: cvs_SecondsContacting
+        description: "Contacting time in seconds."
+      - name: cvs_SecondsDialing
+        description: "Dialing time in seconds."
+      - name: cvs_SecondsFlow
+        description: "Flow time in seconds."
+      - name: cvs_SecondsAnswered
+        description: "Answered time in seconds."
+      - name: cvs_SecondsTalk
+        description: "Talk time in seconds."
+      - name: cvs_SecondsHeld
+        description: "Held time in seconds."
+      - name: cvs_SecondsACW
+        description: "After Call Work (ACW) time in seconds (calculated)."
+      - name: cvs_SecondsHandle
+        description: "Handle time in seconds."
+      - name: last_modified
+        description: "Timestamp of the last modification."
+      - name: zloaddate
+        description: "Load date of the record."
+
+  - name: test
+    description: "test This model provides detailed information about conversations, including various metrics and attributes."
+    columns:
+      - name: CONVERSATION_ID
+        description: "test Unique identifier for the conversation."
+        data_tests:
+          #- unique
+          - not_null
+          - relationships:
+              to:  ref('gc_CONVERSATIONS_SEGMENT_FACT')
+              field: CONVERSATION_ID

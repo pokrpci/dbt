@@ -1,0 +1,14 @@
+{{ config(materialized='ephemeral') }}
+
+SELECT DISTINCT
+		w1.CONVERSATION_ID,
+		w1.SESSION_ID,
+		CASE
+			WHEN w1.WRAP_UP_CODE = '7fb334b0-0e9e-11e4-9191-0800200c9a66' THEN 'Default Wrap-up Code'
+			ELSE ISNULL(w1.WRAP_UP_NAME, w1.WRAP_UP_CODE)
+		END AS WRAP_UP,
+		IIF(w2.RIGHT_PARTY_CONTACT IS NULL, 0, 1) AS RPC,
+		ROW_NUMBER() OVER (PARTITION BY w1.CONVERSATION_ID ORDER BY w1.SEGMENT_START DESC) AS RN_DESC
+	FROM {{ ref('stg_gc_conversation_segment_fact') }}  w1
+	LEFT JOIN {{ ref('stg_gc_outbound_wrapupcode_mappings') }} w2 ON w1.WRAP_UP_CODE = w2.OUTBOUND_WRAPUPCODE_MAPPING_ID
+	WHERE w1.WRAP_UP_CODE IS NOT NULL

@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: snowflake
+    database: A3S_GCD
+    schema: PCI
+    tables:
+      - name: USER_LOGIN 

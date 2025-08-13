@@ -1,0 +1,553 @@
+[0m08:56:07.786195 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F89EF9E2D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F89EF9E0F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F89D2AD220>]}
+
+
+============================== 08:56:07.792755 | baa65d6f-8616-42b6-baf5-0f5abae9de2c ==============================
+[0m08:56:07.792755 [info ] [MainThread]: Running with dbt=1.9.1
+[0m08:56:07.793736 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\POKR\\.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt init dbt_project', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m08:56:07.818154 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse logging event dictionary. Failed to parse dir field: expected string or bytes-like object, got 'WindowsPath'.. Dictionary: {'dir': WindowsPath('C:/Users/POKR/.dbt')}
+[0m08:56:07.820150 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m08:56:07.823180 [debug] [MainThread]: Starter project path: C:\Program Files\Python312\Lib\site-packages\dbt\include\starter_project
+[0m08:56:07.847187 [info ] [MainThread]: 
+Your new dbt project "dbt_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m08:56:07.847187 [info ] [MainThread]: Setting up your profile.
+[0m09:09:07.242697 [info ] [MainThread]: Profile dbt_project written to C:\Users\POKR\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m09:09:07.244716 [debug] [MainThread]: Command `dbt init` succeeded at 09:09:07.244716 after 779.64 seconds
+[0m09:09:07.245697 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F89F785BE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F89F599A30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F89F24F560>]}
+[0m09:09:07.246699 [debug] [MainThread]: Flushing usage events
+[0m09:09:07.584954 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:09:24.553304 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B78571EFC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B7850D1550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B785900D10>]}
+
+
+============================== 09:09:24.557308 | 6e2ac244-2cdd-41f2-9ab5-e752436f1c14 ==============================
+[0m09:09:24.557308 [info ] [MainThread]: Running with dbt=1.9.1
+[0m09:09:24.559311 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\POKR\\.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m09:09:24.581818 [info ] [MainThread]: dbt version: 1.9.1
+[0m09:09:24.582816 [info ] [MainThread]: python version: 3.12.2
+[0m09:09:24.583817 [info ] [MainThread]: python path: C:\Program Files\Python312\python.exe
+[0m09:09:24.584817 [info ] [MainThread]: os info: Windows-11-10.0.22631-SP0
+[0m09:09:24.871627 [info ] [MainThread]: Using profiles dir at C:\Users\POKR\.dbt
+[0m09:09:24.872644 [info ] [MainThread]: Using profiles.yml file at C:\Users\POKR\.dbt\profiles.yml
+[0m09:09:24.873541 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\POKR\OneDrive - Preferred Credit, Inc\Documents\dbt\dbt_project.yml
+[0m09:09:24.874540 [info ] [MainThread]: Configuration:
+[0m09:09:24.875537 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m09:09:24.876545 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m09:09:24.877530 [info ] [MainThread]: Required dependencies:
+[0m09:09:24.877530 [debug] [MainThread]: Executing "git --help"
+[0m09:09:24.925882 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m09:09:24.925882 [debug] [MainThread]: STDERR: "b''"
+[0m09:09:24.926888 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m09:09:24.927895 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m09:09:24.928887 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m09:09:24.928887 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "dbt_project", target "dev" invalid: 'schema' is a required property
+
+
+[0m09:09:24.929888 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\POKR\OneDrive - Preferred Credit, Inc\Documents\dbt\dbt_project.yml> not found
+
+[0m09:09:24.930888 [debug] [MainThread]: Command `dbt debug` failed at 09:09:24.930888 after 0.56 seconds
+[0m09:09:24.932417 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B7854EFC20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B7854ECF80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B78382A420>]}
+[0m09:09:24.933428 [debug] [MainThread]: Flushing usage events
+[0m09:09:25.252213 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m08:56:23.928923 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021DC9F31370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021DCCC9E960>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021DCCC9E8D0>]}
+
+
+============================== 08:56:23.939467 | e870fee3-c154-4bd9-993f-40e3943cc40a ==============================
+[0m08:56:23.939467 [info ] [MainThread]: Running with dbt=1.9.1
+[0m08:56:23.940448 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\POKR\\.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m08:56:23.964461 [info ] [MainThread]: dbt version: 1.9.1
+[0m08:56:23.965437 [info ] [MainThread]: python version: 3.12.2
+[0m08:56:23.966444 [info ] [MainThread]: python path: C:\Program Files\Python312\python.exe
+[0m08:56:23.966444 [info ] [MainThread]: os info: Windows-11-10.0.22631-SP0
+[0m08:56:24.323180 [info ] [MainThread]: Using profiles dir at C:\Users\POKR\.dbt
+[0m08:56:24.325228 [info ] [MainThread]: Using profiles.yml file at C:\Users\POKR\.dbt\profiles.yml
+[0m08:56:24.326256 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\POKR\OneDrive - Preferred Credit, Inc\Documents\dbt\dbt_project.yml
+[0m08:56:24.327763 [info ] [MainThread]: Configuration:
+[0m08:56:24.328771 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m08:56:24.329770 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m08:56:24.330770 [info ] [MainThread]: Required dependencies:
+[0m08:56:24.331768 [debug] [MainThread]: Executing "git --help"
+[0m08:56:24.390872 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m08:56:24.391871 [debug] [MainThread]: STDERR: "b''"
+[0m08:56:24.392893 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m08:56:24.393980 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m08:56:24.395781 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m08:56:24.396786 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "dbt_project", target "dev" invalid: 'schema' is a required property
+
+
+[0m08:56:24.397290 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\POKR\OneDrive - Preferred Credit, Inc\Documents\dbt\dbt_project.yml> not found
+
+[0m08:56:24.398824 [debug] [MainThread]: Command `dbt debug` failed at 08:56:24.398824 after 0.65 seconds
+[0m08:56:24.399847 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021DCCFFF560>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021DCD22A870>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021DCD59FFB0>]}
+[0m08:56:24.399847 [debug] [MainThread]: Flushing usage events
+[0m08:56:24.768078 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:37:23.636155 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022C6155F890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022C6155F7D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022C6155DCD0>]}
+
+
+============================== 10:37:23.639248 | 8fa00bd6-13d2-4927-bf61-4779b28ef7de ==============================
+[0m10:37:23.639248 [info ] [MainThread]: Running with dbt=1.9.1
+[0m10:37:23.641184 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\POKR\\.dbt', 'log_path': 'logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt debug', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m10:37:23.663393 [info ] [MainThread]: dbt version: 1.9.1
+[0m10:37:23.663393 [info ] [MainThread]: python version: 3.12.2
+[0m10:37:23.664308 [info ] [MainThread]: python path: C:\Program Files\Python312\python.exe
+[0m10:37:23.665310 [info ] [MainThread]: os info: Windows-11-10.0.22631-SP0
+[0m10:37:23.952385 [info ] [MainThread]: Using profiles dir at C:\Users\POKR\.dbt
+[0m10:37:23.953372 [info ] [MainThread]: Using profiles.yml file at C:\Users\POKR\.dbt\profiles.yml
+[0m10:37:23.954323 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\POKR\OneDrive - Preferred Credit, Inc\Documents\dbt\dbt_project.yml
+[0m10:37:23.955360 [info ] [MainThread]: Configuration:
+[0m10:37:23.956326 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m10:37:23.956326 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m10:37:23.957323 [info ] [MainThread]: Required dependencies:
+[0m10:37:23.958323 [debug] [MainThread]: Executing "git --help"
+[0m10:37:24.006044 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m10:37:24.007089 [debug] [MainThread]: STDERR: "b''"
+[0m10:37:24.007089 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m10:37:24.008027 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m10:37:24.009071 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m10:37:24.010032 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "dbt_project", target "dev" invalid: 'schema' is a required property
+
+
+[0m10:37:24.011029 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\POKR\OneDrive - Preferred Credit, Inc\Documents\dbt\dbt_project.yml> not found
+
+[0m10:37:24.013028 [debug] [MainThread]: Command `dbt debug` failed at 10:37:24.012078 after 0.55 seconds
+[0m10:37:24.013028 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022C611D1880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022C61536480>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022C615373E0>]}
+[0m10:37:24.014028 [debug] [MainThread]: Flushing usage events
+[0m10:37:24.321122 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:16:00.668805 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000271BC0591F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000271BDD07920>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000271BEB6F5C0>]}
+
+
+============================== 13:16:00.674597 | ea557bb1-e792-4e00-9230-e1c242f1a1dc ==============================
+[0m13:16:00.674597 [info ] [MainThread]: Running with dbt=1.9.1
+[0m13:16:00.675596 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\POKR\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m13:16:00.676573 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\POKR\OneDrive - Preferred Credit, Inc\Documents\dbt\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m13:16:00.679108 [debug] [MainThread]: Command `dbt run` failed at 13:16:00.679108 after 0.17 seconds
+[0m13:16:00.680127 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000271BEB6F5C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000271BE9D4950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000271BE9655E0>]}
+[0m13:16:00.680127 [debug] [MainThread]: Flushing usage events
+[0m13:16:01.046504 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:18:08.606772 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B9D543BF80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B9D799EF60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B9D88C4B30>]}
+
+
+============================== 13:18:08.610785 | 51dbe3f5-a521-432b-a649-4b30b14acc9a ==============================
+[0m13:18:08.610785 [info ] [MainThread]: Running with dbt=1.9.1
+[0m13:18:08.611766 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\POKR\\.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m13:18:08.612807 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\POKR\OneDrive - Preferred Credit, Inc\Documents\dbt\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m13:18:08.613766 [debug] [MainThread]: Command `dbt run` failed at 13:18:08.613766 after 0.16 seconds
+[0m13:18:08.614860 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B9D7F0B8F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B9D543BF80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B9D84E30B0>]}
+[0m13:18:08.614860 [debug] [MainThread]: Flushing usage events
+[0m13:18:09.102385 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:19:12.099804 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025188D69370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025189846C00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002518C3F4B30>]}
+
+
+============================== 13:19:12.102809 | 0ffbc847-585d-430a-b6d8-c7d95e17fa4e ==============================
+[0m13:19:12.102809 [info ] [MainThread]: Running with dbt=1.9.1
+[0m13:19:12.104809 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\POKR\\.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt run', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:19:12.105810 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\POKR\OneDrive - Preferred Credit, Inc\Documents\dbt\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m13:19:12.107809 [debug] [MainThread]: Command `dbt run` failed at 13:19:12.107809 after 0.16 seconds
+[0m13:19:12.108809 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002518A3376E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002518B5988F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002518C1F8CE0>]}
+[0m13:19:12.108809 [debug] [MainThread]: Flushing usage events
+[0m13:19:12.455556 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:24:07.282625 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026F0B250A70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026F0AC9F260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026F0AFF9BB0>]}
+
+
+============================== 13:24:07.286647 | 3cc7f2a8-d5d1-4553-b8dc-2bb6e73839c7 ==============================
+[0m13:24:07.286647 [info ] [MainThread]: Running with dbt=1.9.1
+[0m13:24:07.287308 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': 'C:\\Users\\POKR\\.dbt', 'log_path': 'logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m13:24:07.288314 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\POKR\OneDrive - Preferred Credit, Inc\Documents\dbt\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m13:24:07.290327 [debug] [MainThread]: Command `dbt run` failed at 13:24:07.290327 after 0.16 seconds
+[0m13:24:07.291354 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026F0B22F8C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026F089D9C70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026F0B250A70>]}
+[0m13:24:07.292481 [debug] [MainThread]: Flushing usage events
+[0m13:24:07.685485 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:26:16.802778 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A8E67DF590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A8E635E180>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A8E67DFE60>]}
+
+
+============================== 09:26:16.806925 | 2a6acd66-5eb7-4693-9b2f-56b707ecd7fa ==============================
+[0m09:26:16.806925 [info ] [MainThread]: Running with dbt=1.9.1
+[0m09:26:16.808911 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\POKR\\.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'invocation_command': 'dbt run', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m09:26:16.808911 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\POKR\OneDrive - Preferred Credit, Inc\Documents\dbt\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m09:26:16.811912 [debug] [MainThread]: Command `dbt run` failed at 09:26:16.810913 after 0.16 seconds
+[0m09:26:16.811912 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A8E62E62A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A8E62E6CF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A8E2D263F0>]}
+[0m09:26:16.812915 [debug] [MainThread]: Flushing usage events
+[0m09:26:17.144375 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:12:13.820727 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027EF7DFF980>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027EF7C7FB00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027EF5664F20>]}
+
+
+============================== 14:12:13.826823 | 0cf6a5a6-5b2b-478f-b03a-6f8e0e614ef7 ==============================
+[0m14:12:13.826823 [info ] [MainThread]: Running with dbt=1.9.1
+[0m14:12:13.827796 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\POKR\\.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m14:12:13.829747 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\POKR\OneDrive - Preferred Credit, Inc\Documents\dbt\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m14:12:13.830752 [debug] [MainThread]: Command `dbt run` failed at 14:12:13.830752 after 0.18 seconds
+[0m14:12:13.831754 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027EF3F4A000>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027EF7D0CA10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027EF7D60CE0>]}
+[0m14:12:13.831754 [debug] [MainThread]: Flushing usage events
+[0m14:12:14.348304 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m08:52:44.865942 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000131E6ABB140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000131E6ABB110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000131E6ABA870>]}
+
+
+============================== 08:52:44.872085 | 12864317-19e4-4aad-a862-630aab60d556 ==============================
+[0m08:52:44.872085 [info ] [MainThread]: Running with dbt=1.9.1
+[0m08:52:44.873084 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\POKR\\.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m08:52:44.899130 [info ] [MainThread]: dbt version: 1.9.1
+[0m08:52:44.900148 [info ] [MainThread]: python version: 3.12.2
+[0m08:52:44.901136 [info ] [MainThread]: python path: C:\Program Files\Python312\python.exe
+[0m08:52:44.902136 [info ] [MainThread]: os info: Windows-11-10.0.22631-SP0
+[0m08:52:45.479820 [info ] [MainThread]: Using profiles dir at C:\Users\POKR\.dbt
+[0m08:52:45.480827 [info ] [MainThread]: Using profiles.yml file at C:\Users\POKR\.dbt\profiles.yml
+[0m08:52:45.481833 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\POKR\OneDrive - Preferred Credit, Inc\Documents\dbt\dbt_project.yml
+[0m08:52:45.481833 [info ] [MainThread]: Configuration:
+[0m08:52:45.483278 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m08:52:45.484286 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m08:52:45.484286 [info ] [MainThread]: Required dependencies:
+[0m08:52:45.485290 [debug] [MainThread]: Executing "git --help"
+[0m08:52:45.536932 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m08:52:45.537972 [debug] [MainThread]: STDERR: "b''"
+[0m08:52:45.537972 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m08:52:45.539444 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m08:52:45.539444 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m08:52:45.540537 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "dbt_project", target "dev" invalid: 'schema' is a required property
+
+
+[0m08:52:45.541453 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\POKR\OneDrive - Preferred Credit, Inc\Documents\dbt\dbt_project.yml> not found
+
+[0m08:52:45.543545 [debug] [MainThread]: Command `dbt debug` failed at 08:52:45.543545 after 0.83 seconds
+[0m08:52:45.544547 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000131E6C46450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000131E67A70B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000131E76DBEC0>]}
+[0m08:52:45.544547 [debug] [MainThread]: Flushing usage events
+[0m08:52:45.954229 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:48:08.061181 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CA1C50DBB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CA1C50D790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CA1C50DE80>]}
+
+
+============================== 19:48:08.066182 | 247a775c-499e-44b1-a118-383b314ff35f ==============================
+[0m19:48:08.066182 [info ] [MainThread]: Running with dbt=1.9.1
+[0m19:48:08.067695 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\POKR\\.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m19:48:08.092042 [info ] [MainThread]: dbt version: 1.9.1
+[0m19:48:08.093043 [info ] [MainThread]: python version: 3.12.2
+[0m19:48:08.094044 [info ] [MainThread]: python path: C:\Program Files\Python312\python.exe
+[0m19:48:08.095043 [info ] [MainThread]: os info: Windows-11-10.0.22631-SP0
+[0m19:48:08.413424 [info ] [MainThread]: Using profiles dir at C:\Users\POKR\.dbt
+[0m19:48:08.414421 [info ] [MainThread]: Using profiles.yml file at C:\Users\POKR\.dbt\profiles.yml
+[0m19:48:08.415522 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\POKR\OneDrive - Preferred Credit, Inc\Documents\dbt\dbt_project.yml
+[0m19:48:08.417421 [info ] [MainThread]: Configuration:
+[0m19:48:08.417421 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m19:48:08.418438 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m19:48:08.419424 [info ] [MainThread]: Required dependencies:
+[0m19:48:08.419424 [debug] [MainThread]: Executing "git --help"
+[0m19:48:08.481164 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m19:48:08.482163 [debug] [MainThread]: STDERR: "b''"
+[0m19:48:08.483169 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m19:48:08.484163 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m19:48:08.485177 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m19:48:08.485177 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "dbt_project", target "dev" invalid: 'schema' is a required property
+
+
+[0m19:48:08.486163 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\POKR\OneDrive - Preferred Credit, Inc\Documents\dbt\dbt_project.yml> not found
+
+[0m19:48:08.488165 [debug] [MainThread]: Command `dbt debug` failed at 19:48:08.488165 after 0.61 seconds
+[0m19:48:08.489163 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CA19C44230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CA1C32CBF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CA1CD5EF30>]}
+[0m19:48:08.489163 [debug] [MainThread]: Flushing usage events
+[0m19:48:08.938817 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:51:30.210185 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E697417F50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E696AA3C80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E6969B64E0>]}
+
+
+============================== 15:51:30.217291 | 6c4f6b7e-ffc3-4e9c-a200-92cbae5a2bdd ==============================
+[0m15:51:30.217291 [info ] [MainThread]: Running with dbt=1.9.1
+[0m15:51:30.219289 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\POKR\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt clean', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m15:51:30.220388 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\POKR\OneDrive - Preferred Credit, Inc\Documents\dbt\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m15:51:30.223395 [debug] [MainThread]: Command `dbt clean` failed at 15:51:30.223395 after 0.19 seconds
+[0m15:51:30.224394 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E696BA4080>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E6971733E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E696B2EDE0>]}
+[0m15:51:30.225402 [debug] [MainThread]: Flushing usage events
+[0m15:51:30.737410 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m08:52:36.354690 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ACFC7876E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ACFC641F10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ACFC5B1190>]}
+
+
+============================== 08:52:36.360886 | 6dfcdb6b-255b-49ce-ad32-36a9038eb64f ==============================
+[0m08:52:36.360886 [info ] [MainThread]: Running with dbt=1.9.1
+[0m08:52:36.362891 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\POKR\\.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt source freshness', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m08:52:36.363891 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\POKR\OneDrive - Preferred Credit, Inc\Documents\dbt\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m08:52:36.365887 [debug] [MainThread]: Command `dbt source freshness` failed at 08:52:36.365887 after 0.18 seconds
+[0m08:52:36.366887 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ACFCA1B7A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ACFCB412B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ACFC7876E0>]}
+[0m08:52:36.367897 [debug] [MainThread]: Flushing usage events
+[0m08:52:36.683272 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:28:09.548923 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015A7C8E0470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015A7ECBC7A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015A7E44F9B0>]}
+
+
+============================== 16:28:09.553927 | 3a9a6596-b029-4998-8965-21da9049132b ==============================
+[0m16:28:09.553927 [info ] [MainThread]: Running with dbt=1.9.1
+[0m16:28:09.554922 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\POKR\\.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt run --models my_tbl_dbt_model.sql --target dev', 'send_anonymous_usage_stats': 'True'}
+[0m16:28:09.555924 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\POKR\OneDrive - Preferred Credit, Inc\Documents\dbt\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m16:28:09.557922 [debug] [MainThread]: Command `dbt run` failed at 16:28:09.557922 after 0.18 seconds
+[0m16:28:09.558927 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015A7E427560>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015A7C8E0470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015A7EFFF1A0>]}
+[0m16:28:09.558927 [debug] [MainThread]: Flushing usage events
+[0m16:28:09.846033 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:30:12.854450 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D386A00560>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D386BF9940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D386085B80>]}
+
+
+============================== 09:30:12.861454 | 5a76ce03-582e-4208-8c37-8ff0f49a7af3 ==============================
+[0m09:30:12.861454 [info ] [MainThread]: Running with dbt=1.9.1
+[0m09:30:12.862452 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\POKR\\.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'invocation_command': 'dbt run --models my_tbl_dbt_model.sql --target dev', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m09:30:12.863456 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\POKR\OneDrive - Preferred Credit, Inc\Documents\dbt\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m09:30:12.866483 [debug] [MainThread]: Command `dbt run` failed at 09:30:12.865483 after 0.19 seconds
+[0m09:30:12.866483 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D3858D5D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D3894943B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D386A00560>]}
+[0m09:30:12.867489 [debug] [MainThread]: Flushing usage events
+[0m09:30:13.212763 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:26:34.350209 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022BEDF03BC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022BEDF03D70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022BEDF03B60>]}
+
+
+============================== 10:26:34.356254 | b12d5247-95c8-4a3f-b689-00a64a66f189 ==============================
+[0m10:26:34.356254 [info ] [MainThread]: Running with dbt=1.9.1
+[0m10:26:34.358254 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\POKR\\.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt run --models cv.sql --target dev', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m10:26:34.359621 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\POKR\OneDrive - Preferred Credit, Inc\Documents\dbt\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m10:26:34.360632 [debug] [MainThread]: Command `dbt run` failed at 10:26:34.360632 after 0.17 seconds
+[0m10:26:34.361777 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022BEDEA3260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022BEE254080>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022BEE50C920>]}
+[0m10:26:34.361777 [debug] [MainThread]: Flushing usage events
+[0m10:26:34.807955 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:33:35.036176 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A2F18E0440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A2F413CB90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A2F3ACA810>]}
+
+
+============================== 14:33:35.044087 | 4d843eec-5e6e-4638-9d32-e95ed0b3368e ==============================
+[0m14:33:35.044087 [info ] [MainThread]: Running with dbt=1.9.1
+[0m14:33:35.045084 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\POKR\\.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt run --models acw1.sql --target dev', 'send_anonymous_usage_stats': 'True'}
+[0m14:33:35.047084 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\POKR\OneDrive - Preferred Credit, Inc\Documents\dbt\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m14:33:35.049285 [debug] [MainThread]: Command `dbt run` failed at 14:33:35.049285 after 0.19 seconds
+[0m14:33:35.050288 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A2F4375C70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A2F18E0440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A2F1D444A0>]}
+[0m14:33:35.052285 [debug] [MainThread]: Flushing usage events
+[0m14:33:35.414206 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:30:44.546731 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026C0D497E60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026C0F899520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026C0DBC8F80>]}
+
+
+============================== 15:30:44.553731 | 50f91a01-cfe2-4139-82bb-5acee9c637e3 ==============================
+[0m15:30:44.553731 [info ] [MainThread]: Running with dbt=1.9.1
+[0m15:30:44.554731 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\POKR\\.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run --models acw1.sql --target dev', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:30:44.555734 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\POKR\OneDrive - Preferred Credit, Inc\Documents\dbt\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m15:30:44.557733 [debug] [MainThread]: Command `dbt run` failed at 15:30:44.557733 after 0.19 seconds
+[0m15:30:44.558733 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026C0D497E60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026C0F2E3C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026C0D585010>]}
+[0m15:30:44.559732 [debug] [MainThread]: Flushing usage events
+[0m15:30:45.069303 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:57:28.181478 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E27E177E00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E27D8160F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E27D94C7A0>]}
+
+
+============================== 14:57:28.185497 | 740ec4ef-58b6-4f20-b87a-64ea3972ad91 ==============================
+[0m14:57:28.185497 [info ] [MainThread]: Running with dbt=1.9.1
+[0m14:57:28.187010 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\POKR\\.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run --models acw1.sql --target dev', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m14:57:28.188021 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\POKR\OneDrive - Preferred Credit, Inc\Documents\dbt\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m14:57:28.190019 [debug] [MainThread]: Command `dbt run` failed at 14:57:28.190019 after 0.15 seconds
+[0m14:57:28.191018 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E27D8160F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E27E177E00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E27E176330>]}
+[0m14:57:28.193189 [debug] [MainThread]: Flushing usage events
+[0m14:57:28.572953 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:31:46.197653 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BCCA965C70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BCCA964080>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BCCAF4E4E0>]}
+
+
+============================== 10:31:46.204176 | d3eda107-ac6a-4309-bb83-c5a83511f762 ==============================
+[0m10:31:46.204176 [info ] [MainThread]: Running with dbt=1.9.1
+[0m10:31:46.206186 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\POKR\\.dbt', 'log_path': 'logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run --models conversationSum.sql --target dev', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m10:31:46.208176 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\POKR\OneDrive - Preferred Credit, Inc\Documents\dbt\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m10:31:46.211699 [debug] [MainThread]: Command `dbt run` failed at 10:31:46.211699 after 0.29 seconds
+[0m10:31:46.213718 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BCCB17FDA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BCCA8E1FA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BCCA8E1DC0>]}
+[0m10:31:46.215695 [debug] [MainThread]: Flushing usage events
+[0m10:31:46.572494 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:32:24.970529 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000241CFCA03B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000241D2101E20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000241D2375220>]}
+
+
+============================== 10:32:24.974550 | 7229ec00-80fa-4136-b104-03ed7b032194 ==============================
+[0m10:32:24.974550 [info ] [MainThread]: Running with dbt=1.9.1
+[0m10:32:24.975533 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\POKR\\.dbt', 'log_path': 'logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt run --models acw1.sql --target dev', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m10:32:24.976533 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\POKR\OneDrive - Preferred Credit, Inc\Documents\dbt\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m10:32:24.977533 [debug] [MainThread]: Command `dbt run` failed at 10:32:24.977533 after 0.16 seconds
+[0m10:32:24.978533 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000241D253D610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000241D2375220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000241D2625430>]}
+[0m10:32:24.979550 [debug] [MainThread]: Flushing usage events
+[0m10:32:25.271496 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:06:37.953531 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000233FD843950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000233FD840A40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000233FD8439E0>]}
+
+
+============================== 13:06:37.957331 | a473dd59-5081-4686-8db8-ce05682d192d ==============================
+[0m13:06:37.957331 [info ] [MainThread]: Running with dbt=1.9.1
+[0m13:06:37.959270 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\POKR\\.dbt', 'log_path': 'logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt run --models conversationSum.sql --target dev', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m13:06:37.960221 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\POKR\OneDrive - Preferred Credit, Inc\Documents\dbt\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m13:06:37.962741 [debug] [MainThread]: Command `dbt run` failed at 13:06:37.962741 after 0.15 seconds
+[0m13:06:37.962741 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000233FE1D0DD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000233FE3ADFA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000233FE2A0AA0>]}
+[0m13:06:37.963741 [debug] [MainThread]: Flushing usage events
+[0m13:06:38.328473 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:40:03.535756 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000160C7380320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000160C9B2EC00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000160C9B2F5C0>]}
+
+
+============================== 13:40:03.542759 | 319a6b02-8d5c-41a9-b7ae-f87276738c17 ==============================
+[0m13:40:03.542759 [info ] [MainThread]: Running with dbt=1.9.1
+[0m13:40:03.545751 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': 'C:\\Users\\POKR\\.dbt', 'log_path': 'logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'invocation_command': 'dbt run --models conversationSum.sql --target dev', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:40:03.546748 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\POKR\OneDrive - Preferred Credit, Inc\Documents\dbt\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m13:40:03.548749 [debug] [MainThread]: Command `dbt run` failed at 13:40:03.548749 after 0.28 seconds
+[0m13:40:03.550750 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000160C95A2ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000160C7292420>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000160C9803A40>]}
+[0m13:40:03.551865 [debug] [MainThread]: Flushing usage events
+[0m13:40:03.938302 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:30:24.218611 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021868EC0530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002186B153CB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002186B153E00>]}
+
+
+============================== 10:30:24.228117 | 6b378ec7-e04a-4455-b7b8-004b0bec47b0 ==============================
+[0m10:30:24.228117 [info ] [MainThread]: Running with dbt=1.9.1
+[0m10:30:24.230378 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\POKR\\.dbt', 'log_path': 'logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt run-operation get_columns_from_source --args {source_name: dbinterface, table_name: gc_CONVERSATIONS_SEGMENT_FACT}', 'send_anonymous_usage_stats': 'True'}
+[0m10:30:24.231677 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\POKR\OneDrive - Preferred Credit, Inc\Documents\dbt\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m10:30:24.234220 [debug] [MainThread]: Command `dbt run-operation` failed at 10:30:24.233213 after 0.23 seconds
+[0m10:30:24.234220 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002186BBDAAB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002186B153E00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002186BAF1550>]}
+[0m10:30:24.235220 [debug] [MainThread]: Flushing usage events
+[0m10:30:24.603230 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:58:25.452277 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015D750606B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015D76DB88F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015D76DB8800>]}
+
+
+============================== 12:58:25.457384 | 449c6009-f38f-4e2c-bf94-95a7f3dd376c ==============================
+[0m12:58:25.457384 [info ] [MainThread]: Running with dbt=1.9.1
+[0m12:58:25.459276 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\POKR\\.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt run', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m12:58:25.460530 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\POKR\OneDrive - Preferred Credit, Inc\Documents\dbt\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m12:58:25.463578 [debug] [MainThread]: Command `dbt run` failed at 12:58:25.462537 after 0.22 seconds
+[0m12:58:25.464537 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015D750606B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015D77C813D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015D77C81670>]}
+[0m12:58:25.464537 [debug] [MainThread]: Flushing usage events
+[0m12:58:25.967233 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:17:14.670764 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022071EFA6C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000220728C40E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000220752A5C70>]}
+
+
+============================== 09:17:14.678549 | b216c204-11b1-4edf-9466-8b0d41b78302 ==============================
+[0m09:17:14.678549 [info ] [MainThread]: Running with dbt=1.9.1
+[0m09:17:14.683549 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\POKR\\.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m09:17:14.733851 [info ] [MainThread]: dbt version: 1.9.1
+[0m09:17:14.735849 [info ] [MainThread]: python version: 3.12.2
+[0m09:17:14.736848 [info ] [MainThread]: python path: C:\Program Files\Python312\python.exe
+[0m09:17:14.738396 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m09:17:18.729628 [info ] [MainThread]: Using profiles dir at C:\Users\POKR\.dbt
+[0m09:17:18.731535 [info ] [MainThread]: Using profiles.yml file at C:\Users\POKR\.dbt\profiles.yml
+[0m09:17:18.732497 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\POKR\OneDrive - Preferred Credit, Inc\Documents\dbt\pci_dbt\dbt\dbt_project.yml
+[0m09:17:18.734497 [info ] [MainThread]: Configuration:
+[0m09:17:18.735503 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m09:17:18.737497 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m09:17:18.738498 [info ] [MainThread]: Required dependencies:
+[0m09:17:18.739497 [debug] [MainThread]: Executing "git --help"
+[0m09:17:18.816793 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m09:17:18.817790 [debug] [MainThread]: STDERR: "b''"
+[0m09:17:18.818791 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m09:17:18.820792 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m09:17:18.821791 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m09:17:18.822791 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "dbt_project", target "dev" invalid: 'schema' is a required property
+
+
+[0m09:17:18.824933 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\POKR\OneDrive - Preferred Credit, Inc\Documents\dbt\pci_dbt\dbt\dbt_project.yml> not found
+
+[0m09:17:18.830106 [debug] [MainThread]: Command `dbt debug` failed at 09:17:18.830106 after 4.40 seconds
+[0m09:17:18.831105 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022074EABDA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022075DB6D50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022075CB1070>]}
+[0m09:17:18.833106 [debug] [MainThread]: Flushing usage events
+[0m09:17:19.226708 [debug] [MainThread]: An error was encountered while trying to flush usage events

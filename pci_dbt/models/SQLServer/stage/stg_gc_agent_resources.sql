@@ -1,0 +1,27 @@
+{{ config(materialized='ephemeral') }}
+
+SELECT [ID]
+      ,[RESOURCE_ID]
+      ,[CREATE_AUDIT_KEY]
+      ,[UPDATE_AUDIT_KEY]
+      ,[DIVISION_ID]
+      ,[RESOURCE_NAME]
+      ,[USER_NAME]
+      ,[MANAGER_ID]
+      ,[DEPARTMENT]
+      ,[LOCATION_ID]
+      ,[STATE]
+      ,[TITLE]
+      ,[RESOURCE_TYPE]
+      ,[OFFICIAL_NAME]
+      ,[EMPLOYEE_ID]
+      ,[DATE_HIRE]
+      ,[WORK_TEAM]
+      ,[AUTO_ANSWER]
+      ,[ACTIVE_FLAG]
+      ,[EFFECTIVE_DATE]
+      ,[EXPIRATION_DATE]
+      ,[TRACKING_HASH]
+      ,[ZLOADDATE]
+FROM {{ source('dbinterface', 'gc_AGENT_RESOURCES') }}
+WHERE 1=1

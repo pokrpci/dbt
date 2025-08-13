@@ -1,0 +1,86 @@
+version: 2
+
+sources:
+  - name: dbinterface
+    database: DBINTERFACE
+    schema: dbo
+    tables: 
+      - name: cspl_LogEmailSent   
+
+      - name: gc_AGENT_RESOURCES
+
+      - name: gc_ATTRIBUTES        
+
+      - name: gc_CONVERSATIONS_SEGMENT_FACT
+        description: "This model provides a summary of conversations, including details such as start and end times, duration, agents involved, and various metrics."
+        columns:
+          - name: CONVERSATION_ID
+            description: "Unique identifier for the conversation."
+          - name: START_DATE_TIME_KEY
+            description: "Start date and time of the conversation."
+          - name: END_DATE_TIME_KEY
+            description: "End date and time of the conversation."
+          - name: SEGMENT_START
+            description: "Start date and time of the segment within the conversation."
+          - name: SEGMENT_END
+            description: "End date and time of the segment within the conversation."
+          - name: SESSION_ID
+            description: "Unique identifier for the session associated with the conversation."
+
+      - name: gc_DATE_TIME
+
+      - name: gc_DIVISIONS       
+
+      - name: gc_FORMS  
+
+      - name: gc_OUTBOUND_CAMPAIGNS
+
+      - name: gc_OUTBOUND_WRAPUPCODE_MAPPINGS   
+
+      - name: gc_QUEUE_RESOURCES   
+
+      - name: gc_SESSION_SEGMENTS_FACT            
+        freshness:
+          warn_after: {count: 10, period: day}
+          error_after: {count: 20, period: day}
+        loaded_at_field: ZLOADDATE     
+
+      - name: gc_SURVEY_QUESTIONS                      
+        freshness:
+          warn_after: {count: 10, period: day}
+          error_after: {count: 20, period: day}
+        loaded_at_field: ZLOADDATE  
+
+      - name: mds_GenesysAccountNumberOverride
+
+      - name: nls_PCI_email_queue
+
+      - name: pmtc_CardBrand
+      - name: pmtc_CardType
+      - name: pmtc_CanadianBankToken
+      - name: pmtc_CardToken
+      - name: pmtc_Payment
+      - name: pmtc_PaymentMethod
+      - name: pmtc_PaymentMethodType
+      - name: pmtc_PaymentSchedule
+      - name: pmtc_PaymentScheduleStatus
+      - name: pmtc_RecurrenceType
+      - name: pmtc_UsaBankToken
+        freshness:
+          warn_after: {count: 10, period: day}
+          error_after: {count: 20, period: day}
+        loaded_at_field: ZLOADDATE
+      - name: ppay_PhonePayments
+      - name: ppay_Recurring
+
+
+
+  - name: dbt
+    database: DBT
+    schema: dbo
+    tables:
+      - name: IntxType
+        freshness:
+          warn_after: {count: 10, period: day}
+          error_after: {count: 20, period: day}
+        loaded_at_field: ZLOADDATE

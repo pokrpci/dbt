@@ -1,0 +1,47 @@
+SQLServer:
+  target: prod
+  outputs:
+    dev:
+      type: sqlserver
+      driver:  'ODBC Driver 18 for SQL Server' # (The ODBC Driver installed on your system)
+      server: SQLLST10,64201
+      user: "{{ env_var('DBT_USER') }}"
+      password: "{{ env_var('DBT_PASSWORD') }}"
+      port: 64201
+      database: dbt #DBT - upper case
+      schema: dbo
+      encrypt: true
+      trust_cert: True    
+    stage:
+      type: sqlserver
+      driver:  'ODBC Driver 18 for SQL Server' # (The ODBC Driver installed on your system)
+      server: SQLSTCT14,64202
+      user: "{{ env_var('DBT_USER') }}"
+      password: "{{ env_var('DBT_PASSWORD') }}"
+      port: 64202
+      database: dbt
+      schema: dbo
+      encrypt: true
+      trust_cert: True
+    prod:
+      type: sqlserver
+      driver:  'ODBC Driver 18 for SQL Server' # (The ODBC Driver installed on your system)
+      server: SQLLSP08,64111
+      user: "{{ env_var('DBT_USER') }}"
+      password: "{{ env_var('DBT_PASSWORD') }}"
+      port: 64111
+      database: dbt
+      schema: dbo
+      encrypt: true
+      trust_cert: True
+    snowflake:
+      type: snowflake
+      account: rsb09325
+      user: pokr@preferredcredit.com
+      password: ppppp
+      role: CONSUMERDEVELOPER
+      database: A3S_GCD
+      warehouse: A3S_GCD
+      schema: PCI
+      threads: 1
+      client_session_keep_alive: False  
