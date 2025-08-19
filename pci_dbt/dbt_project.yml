@@ -24,7 +24,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 # Define global variables here
 vars:
-  end_date: getdate() - 400
+  end_date: getdate() - 10
 
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models

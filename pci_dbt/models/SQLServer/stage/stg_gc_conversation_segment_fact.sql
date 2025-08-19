@@ -280,4 +280,6 @@ SELECT
 		ELSE NULL END AS OUTBOUND_CONTACT_ID_OVERRIDE
 	FROM {{ source('dbinterface', 'gc_CONVERSATIONS_SEGMENT_FACT')  }} gcsf 
 	INNER JOIN ( SELECT DISTINCT CONVERSATION_ID FROM {{ source('dbinterface', 'gc_CONVERSATIONS_SEGMENT_FACT') }} gcsf
-				  WHERE gcsf.LAST_MODIFIED >= {{ var("end_date", "2025-04-20") }} ) gcsf1 ON gcsf.CONVERSATION_ID = gcsf1.CONVERSATION_ID
+				     WHERE gcsf.LAST_MODIFIED >= {{ var("end_date", "2025-04-20") }} ) gcsf1 ON gcsf.CONVERSATION_ID = gcsf1.CONVERSATION_ID
+	WHERE gcsf.CONVERSATION_ID NOT IN ('3087fec0-0ff9-4bfc-9a25-2d4598cc5163','eaa6f7dc-da36-47df-9bc2-b9900cf0f7c8') --These didn't end properly, excluded by request from SERVCNT-67921
+	  AND gcsf.CONVERSATION_ID NOT IN ('40d78658-5cd4-44f7-a33f-f10aa173420c','5a74962d-6dab-4aff-b1fd-f955a7ffc93a')                 
