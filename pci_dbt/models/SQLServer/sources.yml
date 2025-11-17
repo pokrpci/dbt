@@ -5,6 +5,8 @@ sources:
     database: DBINTERFACE
     schema: dbo
     tables: 
+      - name: cspl_Customer   
+      - name: cspl_CustomerAccount   
       - name: cspl_LogEmailSent   
 
       - name: gc_AGENT_RESOURCES
